@@ -1,0 +1,271 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #E5D2B7;
+
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  }
+
+  /* NAVBAR */
+  .navbar {
+      background-color: #CAAB8A ;
+    }
+    .navbar .nav-link {
+      color: #442913 ;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .navbar .nav-link:hover {
+      color: #7A4C28 ;
+    }
+    .navbar-brand {
+      color: #442913 ;
+      font-weight: bold;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler-icon {
+      filter: invert(24%) sepia(20%) saturate(900%) hue-rotate(356deg) brightness(92%) contrast(92%);
+    }
+
+    /* HEADER */
+    .header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .header-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .header-content p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    header {
+      height: 75vh;
+      background: url("./images/Header.png") center center/cover no-repeat;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    /* OSCURECIDO */
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5); 
+      z-index: 1;
+    }
+
+    /* Main */
+    .card {
+      border: none;
+      border-radius: 12px;
+      background-color: #F5F1E8;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .btn-custom {
+      background-color: #634C3C;
+      color: #fff;
+      border-radius: 8px;
+    }
+    .btn-custom:hover {
+      background-color: #4b382c;
+    }
+    .titulo-seccion {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 30px 0 20px;
+    }
+
+    /* Comprar o ir a wsp */
+     .product-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      background-color: transparent;
+      padding: 20px;
+    }
+    .product-img {
+      width: 100%;
+      max-width: 350px;
+      aspect-ratio: 1 / 1;
+      background-color: #5A5A5A; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+    .product-info h5 {
+      font-weight: bold;
+      color: #442913;
+    }
+    .product-info p {
+      color: #442913;
+    }
+    .btn-custom {
+      background-color: #634C3C; 
+      color: white;
+      border-radius: 50px;
+      padding: 8px 25px;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #442913;
+    }
+
+    /* IMG-Carrusel */
+    .product-img {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; 
+  border-radius: 10px; 
+  }
+
+  /*Page-QuienesSomos*/ 
+
+     .about-section {
+      padding: 60px 15px;
+    }
+    .about-section h2 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #3e2f1c;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .about-img img {
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .about-img img:hover {
+      transform: scale(1.05);
+    }
+
+    /*Page-Contacto*/
+    .contact-section {
+      padding: 70px 15px;
+    }
+    .contact-section h2 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #3e2f1c;
+      text-align: center;
+    }
+    .contact-section p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* BOTONES REDES */
+    .btn-redes {
+      display: inline-block;
+      font-size: 1.1rem;
+      padding: 12px 25px;
+      border-radius: 30px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+      color: white;
+      text-decoration: none;
+    }
+    .btn-redes:hover {
+      transform: scale(1.05);
+      color: white;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+    }
+    .btn-instagram {
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      border: none;
+    }
+
+    /* FORMULARIO */
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+    .form-container input, 
+    .form-container textarea {
+      margin-bottom: 15px;
+    }
+ 
+
+    /* Footer */
+    footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #4b3621;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    margin-top: 4rem;
+    }
+    
+    footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #ffc107; 
+    }
+    .social-icons a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+
+  /* RESPONSIVE */
+    @media (max-width: 991px) {
+    .navbar-nav {
+    text-align: center;
+    }
+    }
+
+  /* Responsive-Comprar Ya*/
+    @media (max-width: 768px) {
+      .product-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .product-img {
+        max-width: 250px;
+      }
+      }
