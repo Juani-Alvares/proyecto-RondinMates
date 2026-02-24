@@ -16,8 +16,8 @@ Este proyecto es una web simple y responsive que busca transmitir la identidad y
 
 - **HTML5** → estructura semántica  
 - **CSS3** → estilos responsivos y personalizados  
-- **Bootstrap (opcional)** → para mejorar la maquetación  
-- **JavaScript (opcional)** → interactividad y validaciones simples  
+- **Bootstrap** → para mejorar la maquetación  
+- **JavaScript** → interactividad y validaciones simples  
 
 ---
 
